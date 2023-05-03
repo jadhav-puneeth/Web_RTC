@@ -495,7 +495,7 @@ export default function Room(props) {
                     </button>
                     <h3 id="logo">
                         <img src={logo} alt="Site Logo" />
-                        <span>Mumble</span>
+                        <span>StreamSyncRTC</span>
                     </h3>
                 </div>
                 <div id="nav__links">
