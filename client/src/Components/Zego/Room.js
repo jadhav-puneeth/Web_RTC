@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Room.css';
-import TextEditor from './Components/TextEditor';
-import Zego from './Components/Zego';
+import TextEditor from './TextEditor';
+import Zego from './Zego';
 import cam from "./doc.png";
 import { useParams } from 'react-router-dom';
 

@@ -8,8 +8,8 @@ export default function Zego(props) {
     
     const id = props.roomId;
     let myMeeting = async (element) => {
-        const appID = 1024162299;
-        const serverSecret = "b841cc82c2ba631fe7cd0796d9b5233a";
+        const appID = "YOUR ZEGO ID";
+        const serverSecret = "ZEGO ServerSecret";
         const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, id, uuidV4(), props.name);
         const zp = ZegoUIKitPrebuilt.create(kitToken);
         zp.addPlugins({ZegoSuperBoardManager});

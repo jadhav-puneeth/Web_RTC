@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useState } from 'react'
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
 import io from 'socket.io-client';
-import { useParams } from 'react-router-dom';
 
 
 const toolBarOptions = [
@@ -23,9 +22,10 @@ export default function TextEditor(props) {
   const [socket, setSocket] = useState(null);
   const [quill, setQuill] = useState(null);
 
+  let Backend=process.env.BACKEND || "http://localhost:3001";
   //socket connection
   useEffect(() => {
-    const s = io("https://zegoserver.onrender.com");
+    const s = io(Backend);
     setSocket(s);
     return () => {
       s.disconnect();

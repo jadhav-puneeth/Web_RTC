@@ -1,13 +1,9 @@
 import './App.css'
 import Lobby from './Components/lobby/Lobby';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import {  BrowserRouter as Router,Routes,Route,} from "react-router-dom";
 import Room from './Components/room/Room';
 import { useState } from 'react';
-import Room1 from './Components/src/Room'
+import Room1 from './Components/Zego/Room'
 function App() {
   const [name,setName] = useState(null);
   const [flag,setFlag] = useState(false);
