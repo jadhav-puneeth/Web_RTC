@@ -25,7 +25,7 @@ export default function TextEditor(props) {
 
   //socket connection
   useEffect(() => {
-    const s = io("https://zegoserver.onrender.com");
+    const s = io(process.env.BACKEND);
     setSocket(s);
     return () => {
       s.disconnect();
